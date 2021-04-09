@@ -1,21 +1,16 @@
-function getMatrixElementsSum(matrix) {
-  let acc = 0;
-  for (let y = 0; y < matrix.length; y++) {
-    for (let x = 0; x < matrix[y].length; x++) {
-      if (y === 0) {
-        acc += matrix[y][x];
-      } else if (y !== 0 && matrix[y - 1][x] !== 0) {
-        acc += matrix[y][x];
-      }
-    }
-  }
-  return acc;
+/**
+ * Given two strings, find the number of common characters between them.
+ *
+ * @param {String} s1
+ * @param {String} s2
+ * @return {Number}
+ *
+ * @example
+ * For s1 = "aabcc" and s2 = "adcaa", the output should be 3
+ * Strings have 3 common characters - 2 "a"s and 1 "c".
+ */
+function getCommonCharacterCount(/* s1, s2 */) {
+  throw new Error('Not implemented');
 }
 
-const matr = [[1, 2, 3, 4],
-[0, 5, 0, 0],
-[2, 0, 3, 3],
-]
-console.log(getMatrixElementsSum(matr));
-module.exports = getMatrixElementsSum;
-
+module.exports = getCommonCharacterCount;
