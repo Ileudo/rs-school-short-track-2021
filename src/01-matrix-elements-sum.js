@@ -11,11 +11,4 @@ function getMatrixElementsSum(matrix) {
   }
   return acc;
 }
-
-const matr = [
-  [1, 2, 3, 4],
-  [0, 5, 0, 0],
-  [2, 0, 3, 3],
-];
-console.log(getMatrixElementsSum(matr));
 module.exports = getMatrixElementsSum;
