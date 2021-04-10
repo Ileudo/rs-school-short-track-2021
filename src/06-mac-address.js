@@ -17,6 +17,5 @@ function isMAC48Address(n) {
   const result = n.match(reg);
   return result !== null;
 }
-console.log(isMAC48Address('FF-FF-FF-FF-FF-FF'));
 
 module.exports = isMAC48Address;
