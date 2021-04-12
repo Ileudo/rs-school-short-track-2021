@@ -9,8 +9,9 @@
  *
  */
 function getEmailDomain(email) {
-  const regex = /(?!.*@.*).*/gs;
+  const regex = /(?!.*@.*).*/g;
   const x = email.match(regex)[0];
   return x;
 }
+
 module.exports = getEmailDomain;
