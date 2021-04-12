@@ -1,5 +1,5 @@
 /**
- * Implement the Stack with a given interface via array.
+ * Implement the Stack with a given interface via arr.
  *
  * @example
  * const stack = new Stack();
@@ -10,18 +10,23 @@
  * stack.pop(); // undefined
  *
  */
+
 class Stack {
-  push(/* element */) {
-    throw new Error('Not implemented');
+  constructor() {
+    this.arr = [];
+  }
+
+  push(element) {
+    this.arr.push(element);
+    return this.arr;
   }
 
   pop() {
-    throw new Error('Not implemented');
+    return this.arr.pop();
   }
 
   peek() {
-    throw new Error('Not implemented');
+    return this.arr[this.arr.length - 1];
   }
 }
-
 module.exports = Stack;
